@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Photolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+	<div class="top-right">
+		<button id="nightMode" onclick="changeBg()">Night Mode</button>
+	</div>
+	<header>
+		<h2>PHOTOGRAPHER</h2>
+		<h1>Kylo Ren</h1>
+		<nav>
+			<a href="#home" class="tab active tab-option">Portfolio</a>
+			<a class="tab tab-option" href="#price">Pricing</a>
+			<a class="tab tab-option" href="#contact">Contact</a>			
+		</nav>
+	</header>
+	<section id="home" class="home">
+		<div class="half">
+			<img id="portfolio-img" src="https://images.pexels.com/photos/1020016/pexels-photo-1020016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+			<img id="portfolio-img" src="https://c.wallhere.com/images/52/01/20f6713948f617b33ca5cda79774-1565219.jpg!d">
+			<img id="portfolio-img" src="https://images.pexels.com/photos/1535162/pexels-photo-1535162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+			<img id="portfolio-img" src="https://c.wallhere.com/images/dd/a1/661806e983890a424eaa250e258e-1942177.jpg!d">
+		</div>
+		<div class="half">
+			<img id="portfolio-img" src="https://images.pexels.com/photos/4566871/pexels-photo-4566871.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+			<img id="portfolio-img" src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+			<img id="portfolio-img" src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+			<img id="portfolio-img" src="https://images.pexels.com/photos/2239600/pexels-photo-2239600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+		</div>
+	</section>
+
+	<section class="stripe"></section>
+
+	<section class="pricing" id="price">
+		<div class="price-section">
+			<div class="price-card">
+				<div id="head">
+					<h3 class="title">Basic</h3>
+				</div>
+				<div class="price-sub">
+					<div class="sub-sec">
+					<h3>100+ Photos</h3>
+					</div>
+					<div class="sub-sec">
+						<h3>BnW Editing</h3>
+					</div>
+					<div class="sub-sec">
+						<h3>Soft Copy</h3>
+					</div>
+					<div class="sub-sec" id="foot">
+						<h3>$499</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="price-section">
+			<div class="price-card">
+				<div id="head">
+					<h3 class="title">Advanced</h3>
+				</div>
+				<div class="price-sub">
+					<div class="sub-sec">
+						<h3>250+ Photos</h3>
+					</div>
+					<div class="sub-sec">
+						<h3>BnW Editing</h3>
+					</div>
+					<div class="sub-sec">
+						<h3>Soft Copy</h3>
+					</div>
+					<div class="sub-sec" id="foot">
+						<h3>$799</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="price-section">
+			<div class="price-card">
+				<div id="head">
+					<h3 class="title">Pro</h3>
+				</div>
+				<div class="price-sub">
+					<div class="sub-sec">
+					<h3>500+ Photos</h3>
+					</div>
+					<div class="sub-sec">
+						<h3>BnW Editing</h3>
+					</div>
+					<div class="sub-sec">
+						<h3>Soft Copy</h3>
+					</div>
+					<div class="sub-sec" id="foot">
+						<h3>$999</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="stripe"></section>
+
+	<section class="form" id="contact">
+		<div class="form-main">
+			<form>
+			<div class="info">
+				<h3>Your Name:</h3>
+				<input type="text" id="name" placeholder="Full Name"><br>
+				<h3>Your Email:</h3>
+				<input type="email" id="email" placeholder="Email">
+			</div>			
+			<div class="payment-sub">
+				<input type="radio" id="radio" name="price" value="basic">
+				<label for="basic">Basic</label><br>
+				<input type="radio" id="radio" name="price" value="advanced">
+				<label for="advanced">Advanced</label><br>
+				<input type="radio" id="radio" name="price" value="pro" checked>
+				<label for="pro">Pro</label><br>
+			</div>	
+			<button type="button" id="pay" onclick="pay()">
+				Proceed To Pay
+			</button>		
+		</form>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<h4>Powered By Kisara Fernando</h4>
+	</footer>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

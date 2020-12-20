@@ -1,0 +1,197 @@
+html ,body{
+	overflow-x: hidden;
+}
+
+body{
+	font-family: "Raleway", Arial, sans-serif;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+#nightMode{
+	float: right;
+	border:0;
+	padding: 7px;
+	background-color: #000;
+	color: #fff;
+}
+
+nav{
+	border: 1px solid #ccc;
+	padding: 10px 0;
+	display: inline-block;
+	width: auto;
+	margin-top: 30px;
+}
+
+h2 , h1{
+	letter-spacing: 6px;
+}
+
+header{
+	padding: 128px 16px;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	padding: 10px;
+	font-weight: 700; 
+	color: inherit;
+}
+
+a:hover{
+	background-color: #ccc;
+}
+
+.home{
+	display: flex;
+	gap:5px;
+	justify-content: center;
+}
+
+.half{
+	max-width: 45%;
+}
+
+#portfolio-img{
+	filter: grayscale(0.75);
+	width: 100%;
+}
+
+.demo{
+	background-color: #ccc;
+}
+
+.pricing{
+	margin-top: 55px;
+	display: flex;
+	justify-content: center;
+}
+
+.price-section{
+	max-width: 33%;
+	padding: 30px 80px;  
+}
+
+.price-card{
+	border: 1px solid #ccc;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.price-sub{
+	padding: 0 50px;	
+}
+
+#head{
+	margin-bottom: 30px;
+	background-color: #000;
+	color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.title{
+	margin: 0;
+	padding: 10px;
+}
+
+.sub-sec{
+	border-bottom: 1px solid #ccc;
+}
+
+#foot{
+	border-bottom: 0;
+}
+
+.form{
+	max-width: 550px;
+	margin: 50px auto;
+}
+
+.form-main{
+	display: flex;
+	justify-content: center;
+}
+
+#name , #email{
+	width: 100%;
+	padding: 7px;
+	text-align: center;
+	font-size: 14px;
+} 
+
+.payment-sub{
+	margin-top: 30px;
+}
+
+label{
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#pay{
+	margin-top: 20px;
+	padding: 7px;
+	background-color: rgba(0,0,0,0.9);
+	color: #fff;
+	border:0;
+}
+
+#pay:hover{
+	background-color: #000;
+	cursor: pointer;
+}
+
+.stripe{
+	margin-top: 50px;
+	padding: 50px;
+	background-color: grey;
+}
+
+footer{
+	padding: 10px;
+	text-align: center;
+	background-color: #000;
+	color: #f4f4f4;
+}
+
+.Btn{
+	background-color: #fff;
+	color: #fff;
+}
+
+.darkTheme{
+	background-color: #000;
+	color: #fff;
+}
+
+.lightTheme{
+	background-color: #fff;
+	color: #000;
+}
+
+
+@media only screen and (max-width: 600px){
+	.home{
+		display: block;
+	}
+
+	.half{
+		max-width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.pricing{
+		display: block;		
+		/*margin:auto;*/
+	}
+
+	.price-section{
+		min-width: 60%;
+		margin: auto;  
+	}
+	
+}
