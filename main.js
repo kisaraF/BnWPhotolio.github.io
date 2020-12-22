@@ -1,19 +1,23 @@
 let body = document.getElementById('body');
 let btn = document.getElementById('nightMode');
 let footer = document.getElementById('footer');
-let header1 = document.querySelectorAll('#head')[0];
-let header2 = document.querySelectorAll('#head')[1];
-let header3 = document.querySelectorAll('#head')[2];
+let head = document.getElementById('head');
+let payBtn = document.querySelector('#pay');
+let priceText01 = document.querySelectorAll('.title')[0];
+let priceText02 = document.querySelectorAll('.title')[1];
+let priceText03 = document.querySelectorAll('.title')[2];
+let nightText = document.getElementById('nightText');
 
-function dark(){
-	body.classList.toggle("darkTheme");
-	header1.classList.toggle("darkTheme");
-	header2.classList.toggle("darkTheme");
-	header3.classList.toggle("darkTheme");
-	footer.classList.toggle("lightTheme");
-	btn.classList.toggle("Btn");
-}
+btn.addEventListener('click' , changeBg);
+
 
 function changeBg(){
-	dark()
+	nightText.classList.toggle("darkTheme");
+	body.classList.toggle("darkTheme");
+	footer.classList.toggle("lightTheme");
+	console.log(payBtn);
+	payBtn.classList.toggle('lightTheme');
+	priceText01.classList.toggle('lightTheme01');
+	priceText02.classList.toggle('lightTheme01');
+	priceText03.classList.toggle('lightTheme01');
 }

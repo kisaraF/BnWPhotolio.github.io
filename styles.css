@@ -6,6 +6,11 @@ body{
 	font-family: "Raleway", Arial, sans-serif;
 	margin: 0;
 	scroll-behavior: smooth;
+	z-index: -1;
+}
+
+.top-right{
+	padding: 5px;
 }
 
 #nightMode{
@@ -134,14 +139,17 @@ label{
 #pay{
 	margin-top: 20px;
 	padding: 7px;
-	background-color: rgba(0,0,0,0.9);
+	background-color:#000;
 	color: #fff;
 	border:0;
 }
 
-#pay:hover{
-	background-color: #000;
+#pay:hover , #nightMode:hover{
 	cursor: pointer;
+}
+
+#pay:focus , #nightMode:focus{
+	outline: none;
 }
 
 .stripe{
@@ -157,19 +165,24 @@ footer{
 	color: #f4f4f4;
 }
 
-.Btn{
-	background-color: #fff;
-	color: #fff;
-}
-
 .darkTheme{
-	background-color: #000;
-	color: #fff;
+	background-color: #000 !important;
+	color: #fff !important;
+	transition: all 0.3s;
 }
 
 .lightTheme{
 	background-color: #fff;
 	color: #000;
+	transition: all 0.3s;
+}
+
+.lightTheme01{
+	background-color: #fff;
+	color: #000;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	transition: all 0.3s;
 }
 
 
@@ -185,8 +198,7 @@ footer{
 	}
 
 	.pricing{
-		display: block;		
-		/*margin:auto;*/
+		display: block;	
 	}
 
 	.price-section{

@@ -10,13 +10,13 @@
 </head>
 <body id="body">
 	<div class="top-right">
-		<button id="nightMode" onclick="changeBg()">Night Mode</button>
+		<button id="nightMode"><span id="nightText">Night Mode</span></button>
 	</div>
 	<header>
 		<h2>PHOTOGRAPHER</h2>
 		<h1>Kylo Ren</h1>
 		<nav>
-			<a href="#home" class="tab active tab-option">Portfolio</a>
+			<a href="#home" class="tab active tab-option" id="black">Portfolio</a>
 			<a class="tab tab-option" href="#price">Pricing</a>
 			<a class="tab tab-option" href="#contact">Contact</a>			
 		</nav>
@@ -123,9 +123,7 @@
 				<input type="radio" id="radio" name="price" value="pro" checked>
 				<label for="pro">Pro</label><br>
 			</div>	
-			<button type="button" id="pay" onclick="pay()">
-				Proceed To Pay
-			</button>		
+			<button type="button" id="pay">Proceed to Pay</button>		
 		</form>
 		</div>
 	</section>
