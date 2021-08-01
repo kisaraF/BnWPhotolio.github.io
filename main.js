@@ -22,12 +22,12 @@ function changeBg(){
 		btn.classList.remove('hello');
 		btn.style.backgroundColor = "#000";
 		btn.style.color = "#fff";
-		btn.innerHTML = "Night Mode";
+		btn.innerHTML = "Dark Mode";
 	}else{
 		btn.style.backgroundColor = "#c16b08";
 		btn.style.color = "#fff";
 		btn.className = "hello";
-		btn.innerHTML = "Day Mode";
+		btn.innerHTML = "Light Mode";
 	}
 
 	if(pay.classList.contains('hello')){
